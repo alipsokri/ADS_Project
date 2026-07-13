@@ -8,6 +8,13 @@ struct Order {
 	int drinks;
 };
 
+int main() {
+	queue<Order> orderQueue;
+	int drinks;
+
+
+}
+
 
 
 	
