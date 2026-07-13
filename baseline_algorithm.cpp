@@ -21,8 +21,28 @@ int main() {
 		cout << "Enter choice: ";
 		cin >> choice;
 
-		
-	}
+		switch (choice) {
+
+		case 1: {
+			Order newOrder;
+
+			cout << "Customer Name: ";
+			cin.ignore();
+			getline(cin, newOrder.customerName);
+
+			cout << "Number of Drinks: ";
+			cin >> newOrder.drinks;
+
+			orderQueue.push(newOrder);
+
+			cout << "Order added successfully.\n";
+			break;
+		}
+
+		}
+	} while ();
+
+	return 0;
 }
 
 
