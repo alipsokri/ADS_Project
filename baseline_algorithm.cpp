@@ -64,8 +64,8 @@ int main() {
 				cout << "No orders to serve.\n";
 			}
 			else {
-				Order current = fifoQueue.front();
-				fifoQueue.pop();
+				Order current = orderQueue.front();
+				orderQueue.pop();
 
 				cout << "\nServing: " << current.customerName << " (" << current.drinks << " drinks)\n";
 			}
