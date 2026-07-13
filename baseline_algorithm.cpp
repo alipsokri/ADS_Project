@@ -67,17 +67,18 @@ int main() {
 				Order current = fifoQueue.front();
 				fifoQueue.pop();
 
-				cout << "\nServing: "
-					<< current.customerName
-					<< " (" << current.drinks
-					<< " drinks)\n";
+				cout << "\nServing: " << current.customerName << " (" << current.drinks << " drinks)\n";
 			}
 			break;
 		}
+		case 4:
+			cout << "Program Ended.\n";
+			break;
 
+		default:
+			cout << "Invalid choice.\n";
 		}
-	} while ();
-
+	} while (choice != 4);
 	return 0;
 }
 
