@@ -58,6 +58,23 @@ int main() {
 			}
 			break;
 		}
+
+		case 3: {
+			if (fifoQueue.empty()) {
+				cout << "No orders to serve.\n";
+			}
+			else {
+				Order current = fifoQueue.front();
+				fifoQueue.pop();
+
+				cout << "\nServing: "
+					<< current.customerName
+					<< " (" << current.drinks
+					<< " drinks)\n";
+			}
+			break;
+		}
+
 		}
 	} while ();
 
