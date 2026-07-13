@@ -39,6 +39,25 @@ int main() {
 			break;
 		}
 
+		case 2: {
+			if (fifoQueue.empty()) {
+				cout << "Queue is empty.\n";
+			}
+			else {
+				queue<Order> temp = orderQueue;
+
+				cout << "\nCurrent Queue:\n";
+
+				int position = 1;
+				while (!temp.empty()) {
+					Order current = temp.front();
+					cout << position << ". " << current.customerName << " (" << current.drinks << " drinks)\n";
+					temp.pop();
+					position++;
+				}
+			}
+			break;
+		}
 		}
 	} while ();
 
