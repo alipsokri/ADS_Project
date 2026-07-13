@@ -40,7 +40,7 @@ int main() {
 		}
 
 		case 2: {
-			if (fifoQueue.empty()) {
+			if (orderQueue.empty()) {
 				cout << "Queue is empty.\n";
 			}
 			else {
@@ -60,7 +60,7 @@ int main() {
 		}
 
 		case 3: {
-			if (fifoQueue.empty()) {
+			if (orderQueue.empty()) {
 				cout << "No orders to serve.\n";
 			}
 			else {
